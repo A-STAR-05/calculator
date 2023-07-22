@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="calc">
+      <div id="display">
+        Welcome To Calc V.01
+        <input type="text" id="dis" name="dis" />
+      </div>
+      <div class="numbers">
+        <input type="button" class="btn" value="AC" onclick="clear2()" />
+        <input type="button" class="btn" value="1" onclick="dis.value+='1'" />
+        <input type="button" class="btn" value="2" onclick="dis.value+='2'" />
+        <input type="button" class="btn" value="3" onclick="dis.value+='3'" />
+        <input type="button" class="btn" value="4" onclick="dis.value+='4'" />
+        <input type="button" class="btn" value="5" onclick="dis.value+='5'" />
+        <input type="button" class="btn" value="6" onclick="dis.value+='6'" />
+        <input type="button" class="btn" value="7" onclick="dis.value+='7'" />
+        <input
+          type="button"
+          class="btn"
+          value="8"
+          onclick="dis.value+='8'"
+        /><input type="button" class="btn" value="9" onclick="dis.value+='9'" />
+
+        <input type="button" class="btn" value="0" onclick="dis.value+='0'" />
+        <input type="button" class="btn" value="+" onclick="dis.value+=' + '" />
+        <input type="button" class="btn" value="-" onclick="dis.value+=' - '" />
+        <input type="button" class="btn" value="*" onclick="dis.value+=' X '" />
+        <input type="button" class="btn" value="/" onclick="dis.value+=' / '" />
+        <input type="button" class="btn" value="=" onclick="calc()" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
